@@ -1,9 +1,9 @@
 {
-    "notes": [
-      {
-        "title": "note-taker",
-        "text": "Finish setting up routes and submit note-taker.",
-        "id": "1"
-      }
-    ]
+  "notes": [
+    {
+      "title": "Note-Taker",
+      "text": "Fix bugs, create routers, then submit note-taker assignment.",
+      "id": "8513fb9f-8b26-4dd7-80b6-1a69edcc68c0"
+    }
+  ]
 }

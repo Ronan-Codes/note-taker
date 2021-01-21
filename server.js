@@ -1,5 +1,7 @@
 const express = require('express');
 
+const PORT = process.env.PORT || 3001;
+
 const fs = require('fs');
 const path = require('path');
 
@@ -19,12 +21,12 @@ app.use('/', htmlRoutes);
 app.use(express.static('public'));
 
 // consts and functions for apiRoutes start
-const { db } = require('./db/db.json');
+const { notes } = require('./db/db.json');
 const { v4: uuidv4 } = require('uuid')
 
 // get for db.json and return
 app.get('/api/notes', (req, res) => {
-    return res.json(db);
+    return res.json(notes);
 });
 
 // note function
@@ -46,7 +48,7 @@ app.post('/api/notes', (req, res) => {
     // assign the unique id to note (req.body)
     req.body.id = uniqueId;
     // create note and return it
-    const note = createNewNote(req.body, db);
+    const note = createNewNote(req.body, notes);
     return res.json(note)
 })
 
@@ -67,14 +69,14 @@ function deleteNote(searchedId, notesArray) {
     }
 }
 
-// delete from db.json
-app.delete('api/notes/:id', (req,res) => {
-    // var for id searched
+// delete from notes array
+app.delete('/api/notes/:id', (req,res) => {
+    // const for searchedId
     const searchedId = req.params.id;
-    // get index of object with id searched
+    // get index element with searchedId
     const response = deleteNote(searchedId, notes);
 
-    // see if id is in notes then delete else send error
+    // see if searchedId element is in notes then delete else send error
     if (response) {
         return res.status(200).send(`Note with ID: ${searchedId} deleted from database`)
     } else {
@@ -99,7 +101,7 @@ app.get('/notes', (req, res) => {
 });
 //html routes end
 
-const PORT = process.env.PORT || 3001;
+
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
