@@ -30,7 +30,7 @@
 ```
 
 ## Usage (Heroku)
-1. Visit this [Heroku Link](https://ronan-note-taker.herokuapp.com/){:target="_blank"} to access the live app.
+1. Visit this [Heroku Link](https://ronan-note-taker.herokuapp.com/) to access the live app.
 2. Click "Get Started" to start creating notes or delete previous ones.
 
 ## Screenshots
@@ -48,12 +48,12 @@
 
 
 ## License
-This project is in the public domain and free for any and all users! For more information on this (un)licensing statement, visit [unlicense.org](https://unlicense.org/){:target="_blank"}
+This project is in the public domain and free for any and all users! For more information on this (un)licensing statement, visit [unlicense.org](https://unlicense.org/).
 
 ## Contributing
-* If you'd like to contribute to this project, please follow the rules of the [Contributor Covenant](https://www.contributor-covenant.org/){:target="_blank"}
+* If you'd like to contribute to this project, please follow the rules of the [Contributor Covenant](https://www.contributor-covenant.org/).
 
 ## Author
 * This application was written and developed by Ronan Galvez. This assignment is part of the UCF Coding Bootcamp's project requirements.
-* For any questions/suggestions/concerns, open an issue in the [project repo](https://github.com/galv-ronan/note-taker.git){:target="_blank"} or contact me directly at [galv.ronan@gmail.com](galv.ronan@gmail.com).
-* Check out the rest of my work on GitHub at [Ronan-Codes](https://github.com/Ronan-Codes){:target="_blank"}.
+* For any questions/suggestions/concerns, open an issue in the [project repo](https://github.com/galv-ronan/note-taker.git) or contact me directly at [galv.ronan@gmail.com](galv.ronan@gmail.com).
+* Check out the rest of my work on GitHub at [Ronan-Codes](https://github.com/Ronan-Codes).
