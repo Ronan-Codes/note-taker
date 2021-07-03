@@ -30,7 +30,7 @@
 ```
 
 ## Usage (Heroku)
-1. Visit this [Heroku Link](https://ronan-note-taker.herokuapp.com/){:target="_blank"} to access the live app.
+1. Visit this [Heroku Link](https://ronan-note-taker.herokuapp.com/){:target="_blank" rel="noopener"} to access the live app.
 2. Click "Get Started" to start creating notes or delete previous ones.
 
 ## Screenshots
